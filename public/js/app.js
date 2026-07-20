@@ -248,3 +248,17 @@ function exportAll() {
 
 function showSettings() { $('apiKeyInput').scrollIntoView({ behavior: 'smooth' }); $('apiKeyInput').focus(); }
 function esc(t) { const d = document.createElement('div'); d.textContent = t; return d.innerHTML; }
+
+// Dark mode
+function toggleDark() {
+    document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+}
+
+// Init theme from localStorage or system
+(function() {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    }
+})();
