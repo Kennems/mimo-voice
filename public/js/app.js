@@ -24,7 +24,7 @@ function setToggle(id, on) { $(id).className = 'toggle' + (on ? ' on' : ''); }
 
 function saveApiKey(k) { localStorage.setItem('asr_api_key', k.trim()); toast('API Key 已保存'); }
 function saveCluster(c) { localStorage.setItem('asr_cluster', c); toast('集群已切换'); }
-function checkApiKey() { if (!localStorage.getItem('asr_api_key')) toast('请先配置 API Key', 'error'); }
+function checkApiKey() { if (!localStorage.getItem('asr_api_key')) { setTimeout(() => toast('请先配置 API Key', 'error'), 3000); } }
 function toggleStream() { state.settings.stream = !state.settings.stream; setToggle('streamToggle', state.settings.stream); save(); }
 function toggleAutoCopy() { state.settings.autoCopy = !state.settings.autoCopy; setToggle('autoCopyToggle', state.settings.autoCopy); save(); }
 function toggleHistory() { state.settings.saveHistory = !state.settings.saveHistory; setToggle('historyToggle', state.settings.saveHistory); save(); }

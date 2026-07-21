@@ -1,0 +1,65 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5f5f7"/>
+      <stop offset="100%" stop-color="#e8e8ed"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="52" fill="white" opacity="0.9"/>
+  <text x="24" y="34" font-family="-apple-system" font-size="17" font-weight="600" fill="#1d1d1f">🎙️ MiMo Voice</text>
+  
+  <!-- Main Card - Recording -->
+  <rect x="24" y="72" width="560" height="360" rx="18" fill="white" filter="url(#shadow)"/>
+  <text x="44" y="105" font-family="-apple-system" font-size="15" font-weight="600" fill="#1d1d1f">语音录制</text>
+  
+  <!-- Waveform -->
+  <rect x="44" y="120" width="520" height="100" rx="12" fill="#fbfbfd" stroke="#d2d2d7"/>
+  <path d="M60 170 Q150 140 250 170 Q350 200 450 170 Q500 155 540 170" stroke="#0071e3" stroke-width="2" fill="none"/>
+  
+  <!-- Record Button -->
+  <circle cx="300" cy="300" r="36" fill="#0071e3"/>
+  <circle cx="300" cy="300" r="12" fill="white"/>
+  
+  <!-- Time -->
+  <text x="270" y="360" font-family="-apple-system" font-size="20" font-weight="600" fill="#1d1d1f">00:00</text>
+  <circle cx="340" cy="355" r="4" fill="#aeaeb2"/>
+  <text x="350" y="360" font-family="-apple-system" font-size="13" fill="#86868b">就绪</text>
+  
+  <!-- Sidebar Cards -->
+  <rect x="608" y="72" width="280" height="180" rx="18" fill="white"/>
+  <text x="628" y="105" font-family="-apple-system" font-size="15" font-weight="600" fill="#1d1d1f">API 配置</text>
+  <rect x="628" y="120" width="240" height="36" rx="10" fill="#fbfbfd" stroke="#d2d2d7"/>
+  <text x="640" y="143" font-family="monospace" font-size="13" fill="#aeaeb2">tp-xxxxx</text>
+  
+  <rect x="608" y="268" width="280" height="164" rx="18" fill="white"/>
+  <text x="628" y="301" font-family="-apple-system" font-size="15" font-weight="600" fill="#1d1d1f">设置</text>
+  
+  <!-- Toggles -->
+  <text x="628" y="335" font-family="-apple-system" font-size="14" fill="#1d1d1f">流式输出</text>
+  <rect x="840" y="320" width="44" height="26" rx="13" fill="#e5e5ea"/>
+  <circle cx="860" cy="333" r="10" fill="white"/>
+  
+  <text x="628" y="375" font-family="-apple-system" font-size="14" fill="#1d1d1f">自动复制</text>
+  <rect x="840" y="360" width="44" height="26" rx="13" fill="#e5e5ea"/>
+  <circle cx="860" cy="373" r="10" fill="white"/>
+  
+  <!-- Upload Card -->
+  <rect x="24" y="448" width="560" height="140" rx="18" fill="white"/>
+  <text x="44" y="481" font-family="-apple-system" font-size="15" font-weight="600" fill="#1d1d1f">文件上传</text>
+  <rect x="44" y="496" width="520" height="72" rx="12" fill="none" stroke="#d2d2d7" stroke-dasharray="6 4"/>
+  <text x="250" y="538" font-family="-apple-system" font-size="14" fill="#86868b">📤 拖放文件或点击选择</text>
+  
+  <!-- History Card -->
+  <rect x="608" y="448" width="280" height="140" rx="18" fill="white"/>
+  <text x="628" y="481" font-family="-apple-system" font-size="15" font-weight="600" fill="#1d1d1f">历史</text>
+  <text x="640" y="520" font-family="-apple-system" font-size="13" fill="#aeaeb2">暂无历史记录</text>
+  
+  <!-- Result Card -->
+  <rect x="24" y="604" width="864" height="180" rx="18" fill="white"/>
+  <text x="44" y="637" font-family="-apple-system" font-size="15" font-weight="600" fill="#1d1d1f">识别结果</text>
+  <rect x="44" y="652" width="824" height="112" rx="12" fill="#fbfbfd" stroke="#d2d2d7"/>
+  <text x="380" y="714" font-family="-apple-system" font-size="14" fill="#aeaeb2">🎧 录制或上传音频后显示结果</text>
+</svg>
